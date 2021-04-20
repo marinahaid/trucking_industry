@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <title>Грузоперевозки</title>
+  <link rel="stylesheet" href="./css/style.min.css">
+  <script>
+    document.createElement("picture");
+  </script>
+  <script src="./js/vendor/picturefill.min.js" async></script>
+</head>
+
+<body>
+  <main>
+    <div class="form">
+      <div class="form__container container">
+        <h1>FTL: Прямая машина</h1>
+        <!--<form action="https://echo.htmlacademy.ru" method="post" id="form" class="form__body">-->
+          <section class="form__route">
+            <h2>Маршрут</h2>
+            <div class="from__route-list">
+              <div class="form__route-item">
+                <label for="WhereFrom">Откуда</label>
+                <input id="WhereFrom" type="text" name="name" required>
+              </div>
+              <div class="form__route-item">
+                <label for="WhereTo">Куда</label>
+                <input id="WhereTo" type="text" name="name" required>
+              </div>
+            </div>
+          </section>
+          <section class="form__transport">
+            <h2>Транспорт</h2>
+            <div class="from__transport-list">
+              <div class="form__transport-item">
+                <label for="weight">Грузоподъемность</label>
+                <input id="weight" type="text" name="name" placeholder="Не выбрана" required><svg width="8" height="5">
+                  <use xlink:href="./img/sprite.svg#arrow"></use>
+                </svg><span>Выбрать для покупки</span>
+              </div>
+              <div class="form__transport-item">
+                <label for="method">Куда</label>
+                <input id="method" type="text" name="name" placeholder="Задняя" required>
+              </div>
+            </div>
+          </section>
+          <section class="form__cargo">
+            <h2>Транспорт</h2>
+            <div class="from__cargo-list">
+              <div class="form__cargo-item">
+                <label for="type">Тип груза</label>
+                <input id="type" type="text" name="name" placeholder="Не выбран" required><svg width="8" height="5">
+                  <use xlink:href="./img/sprite.svg#arrow"></use>
+                </svg><span>Выбрать для покупки</span>
+              </div>
+              <div class="form__cargo-item">
+                <label for="class">Класс опасности</label>
+                <input id="class" type="text" name="name" placeholder=">1" required>
+              </div>
+              <div class="form__cargo-item">
+                <label for="valuation">Объявленная ценность, ₽</label>
+                <input id="valuation" type="text" name="name" placeholder="Задняя" required>
+              </div>
+
+              <div class="form__cargo-item">
+                <div class="checkbox">
+                  <input id="formAgreement" checked type="checkbox" name="agreement" class="visually-hidden req">
+                  <label for="formAgreement"><span>Требуется температурный режим</span></label>
+                </div>
+                <div class="from__temperature-list">
+                  <div class="form__temperature-item">
+                    <label for="TemperatureStart">От, ℃</label>
+                    <input id="TemperatureStart" type="text" name="name" placeholder="-20">
+                  </div>
+                  <div class="form__temperature-item">
+                    <label for="TemperatureEnd">До, ℃</label>
+                    <input id="TemperatureEnd" type="text" name="name" placeholder="+23">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="form__time">
+            <h2>Время<svg width="8" height="5">
+                <use xlink:href="./img/sprite.svg#arrow"></use>
+              </svg></h2>
+            <div class="from__time-list">
+              <div class="form__time-wrap">
+                <p class="form__time-arrival">Когда прибыть на точку</p>
+                <p class="form__time-plan">700 км в день</p>
+              </div>
+              <div class="form__time-item">
+                <label for="adress">Выбрать адрес</label>
+                <input id="adress" type="text" name="name" placeholder="Адрес не указан" required><span>Не
+                  выбрано</span>
+              </div>
+              <!-- <div class="form__time-item">
+              <label for="adress"><span>Выбрать адрес</span></label>
+              <input id="adress" type="text" name="name" placeholder="Адрес не указан" required><span>Не выбрано</span>
+            </div>-->
+              <div class="form__time-item">
+                <h2>Комментарии к заказу</h2>
+                <textarea class="form__time-text" id="adress-letter" name="text"
+                  placeholder="Укажите особенности въезда на территорию склада или подъезда к адресу"></textarea>
+              </div>
+            </div>
+          </section>
+        <!--</form>-->
+      </div>
+    </div>
+  </main>
+
+  <script src="./js/vendor/svg4everybody.min.js"></script>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>
