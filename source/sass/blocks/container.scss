@@ -1,6 +1,8 @@
 .container {
-  max-width: 1584px;
-  margin: 0 auto;
+  //max-width: 1584px;
+  width: 100%;
+  padding: 0 168px;
+   margin: 0 auto;
 
 @media (max-width: $tablet-width) {
     width: 100%;
@@ -8,6 +10,7 @@
   }
 
   @media (max-width: $mobile-width) {
+    max-width: 100%;
     padding: 0 16px;
   }
 }

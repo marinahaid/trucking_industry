@@ -115,3 +115,17 @@ left: -22px;
   display: block;
   fill: #ffffff;
 }
+
+@media (max-width: $mobile-width) {
+.form__time {
+  padding-top: 22px;
+}
+
+.form__time-box {
+width: 100%;
+}
+
+.form__time-text {
+padding: 14px 10px 0 14px;
+}
+}

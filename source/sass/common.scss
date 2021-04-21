@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  min-width: 320px;
+  min-width: 375px;
   margin: 0;
   font-family: "Helvetica", "Arial", sans-serif;
   font-size: $font-size;
@@ -67,6 +67,7 @@ a {
 }
 
 .title-small {
+  font-weight: 700;
   font-size: 24px;
   line-height: 30px;
   position: relative;
@@ -138,11 +139,30 @@ h2 {
 select {
   font-size: 15px;
   line-height: 18px;
-  padding: 5px 10px 0 10px;
+  padding: 4px 10px 0 10px;
   min-height: 46px;
 }
 
 select:active {
   background-color: $color-red;
   color: $color-light;
+}
+
+@media (max-width: $mobile-width) {
+  .title-small {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .form__list {
+    width: 100%;
+  }
+
+  .form__item p {
+    padding-bottom: 9px;
+  }
+
+  select {
+  min-height: 45px;
+  }
 }

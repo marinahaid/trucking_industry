@@ -11,7 +11,7 @@
 }
 
 .form__cargo-list {
- width: 23%;
+  width: 23%;
 }
 
 .form__cargo-item {
@@ -22,9 +22,9 @@
 
 .form__cargo-item:first-child,
 .form__cargo-item:nth-child(4),
-  .form__cargo-item:nth-child(5) {
-    width: 100%;
-  }
+.form__cargo-item:nth-child(5) {
+  width: 100%;
+}
 
 .form__cargo-item:nth-child(1),
 .form__cargo-item:nth-child(3) {
@@ -45,6 +45,7 @@
   position: relative;
   font-size: 13px;
   line-height: 15px;
+  border: none;
 }
 
 .checkbox__arrow::before {
@@ -52,7 +53,8 @@
   width: 27px;
   height: 27px;
   border-radius: 5%;
-  border: 1px solid #cecece;
+  //border: 1px solid #cecece;
+  border: none;
   margin: 0;
   background-repeat: no-repeat;
   background-position: center;
@@ -67,8 +69,8 @@
 
 .checkbox__arrow::after {
   content: "";
-  width: 9px;
-  height: 17px;
+  width: 7px;
+  height: 15px;
   -webkit-transform: rotate(41deg);
   transform: rotate(41deg);
   background-color: $color-red;
@@ -90,7 +92,7 @@
 }
 
 .form__temperature-item {
-padding-right: 8px;
+  padding-right: 8px;
 }
 
 .form__temperature-item:last-child {
@@ -100,4 +102,62 @@ padding-right: 8px;
 .form__temperature-item label {
   font-size: 13px;
   line-height: 15px;
+}
+
+.form__temperature-list {
+  display: none;
+}
+
+@media (max-width: $mobile-width) {
+  .form__cargo-list {
+    width: 100%;
+  }
+
+  .form__cargo-item:first-child,
+  .form__cargo-item:nth-child(5) {
+    width: 50%;
+  }
+
+  .form__cargo-item:nth-child(1) {
+    padding-right: 8px;
+  }
+
+  .form__cargo-item:nth-child(2) {
+    display: none;
+  }
+
+  .form__cargo-item:nth-child(3) {
+    padding-right: 0;
+  }
+
+  .form__cargo-item:nth-child(4) {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .checkbox {
+    padding-top: 0;
+  }
+
+  .checkbox__arrow::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+  }
+
+  .form__temperature-list {
+    display: flex;
+  }
+
+  .form__temperature-item {
+    width: 50%;
+  }
+
+  .form__temperature-item {
+   padding-right: 8px;
+  }
+
+  .form__temperature-item:last-child {
+    padding-right: 0;
+   }
 }

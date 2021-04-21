@@ -30,11 +30,9 @@ padding-right: 8px;
     line-height: 18px;
   }
 
-  /*.form__transport-item p {
-    margin: 0;
-    padding-bottom: 5px;
+  @media (max-width: $mobile-width) {
+  .form__transport-list {
+    width: 100%;
+    
   }
-
-  .form__transport-item select {
-    min-height: 45px;
-  }*/
+}
