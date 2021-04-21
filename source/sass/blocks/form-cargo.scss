@@ -1,0 +1,103 @@
+.form__cargo {
+  padding-top: 42px;
+}
+
+.form__cargo h2 {
+  padding-bottom: 16px;
+}
+
+.form__cargo-item:first-child {
+  width: 100%;
+}
+
+.form__cargo-list {
+ width: 23%;
+}
+
+.form__cargo-item {
+  width: 50%;
+  padding-right: 8px;
+  padding-bottom: 12px;
+}
+
+.form__cargo-item:first-child,
+.form__cargo-item:nth-child(4),
+  .form__cargo-item:nth-child(5) {
+    width: 100%;
+  }
+
+.form__cargo-item:nth-child(1),
+.form__cargo-item:nth-child(3) {
+  padding-right: 0;
+}
+
+.form__cargo label {
+  padding-bottom: 6px;
+}
+
+.checkbox {
+  padding-top: 7px;
+}
+
+.checkbox__arrow {
+  display: flex;
+  padding-left: 38px;
+  position: relative;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.checkbox__arrow::before {
+  content: "";
+  width: 27px;
+  height: 27px;
+  border-radius: 5%;
+  border: 1px solid #cecece;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  vertical-align: top;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 0;
+  background-color: $color-red;
+}
+
+.checkbox__arrow::after {
+  content: "";
+  width: 9px;
+  height: 17px;
+  -webkit-transform: rotate(41deg);
+  transform: rotate(41deg);
+  background-color: $color-red;
+  border-right: 2px solid $color-light;
+  border-bottom: 2px solid $color-light;
+  margin: 0;
+  background-position: center;
+  display: inline-block;
+  vertical-align: top;
+  z-index: 5;
+  position: absolute;
+  left: 9px;
+  top: -3px;
+}
+
+.form__temperature-list {
+  padding-top: 17px;
+  display: flex;
+}
+
+.form__temperature-item {
+padding-right: 8px;
+}
+
+.form__temperature-item:last-child {
+  padding-right: 0;
+}
+
+.form__temperature-item label {
+  font-size: 13px;
+  line-height: 15px;
+}

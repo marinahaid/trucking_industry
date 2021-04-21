@@ -1,0 +1,40 @@
+.form__transport {
+padding-top: 23px;
+}
+
+.form__transport h2{
+margin: 0;
+padding-bottom: 15px;
+}
+
+/*.form__transport label{
+padding-bottom: 5px;
+}*/
+
+.form__transport-list{
+//display: flex;
+width: 23%;
+}
+
+.form__transport-item {
+  width: 50%;
+padding-right: 8px;
+}
+
+.form__transport-item:last-child {
+  padding-right: 0;
+  }
+
+  .form__transport-item option {
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  /*.form__transport-item p {
+    margin: 0;
+    padding-bottom: 5px;
+  }
+
+  .form__transport-item select {
+    min-height: 45px;
+  }*/

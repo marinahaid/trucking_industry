@@ -20,98 +20,120 @@
     <div class="form">
       <div class="form__container container">
         <h1>FTL: Прямая машина</h1>
-        <!--<form action="https://echo.htmlacademy.ru" method="post" id="form" class="form__body">-->
+        <form action="https://echo.htmlacademy.ru" method="post" id="form" class="form__body">
           <section class="form__route">
-            <h2>Маршрут</h2>
-            <div class="from__route-list">
-              <div class="form__route-item">
-                <label for="WhereFrom">Откуда</label>
-                <input id="WhereFrom" type="text" name="name" required>
+            <h2 class="title-small">Маршрут</h2>
+            <div class="form__list from__route-list">
+              <div class="form__item form__route-item">
+                <label for="wherefrom">Откуда</label>
+                <input id="wherefrom" type="text" name="name" required>
               </div>
-              <div class="form__route-item">
-                <label for="WhereTo">Куда</label>
-                <input id="WhereTo" type="text" name="name" required>
+              <div class="form__item form__route-item">
+                <label for="whereto">Куда</label>
+                <input id="whereto" type="text" name="name" required>
               </div>
             </div>
           </section>
           <section class="form__transport">
-            <h2>Транспорт</h2>
-            <div class="from__transport-list">
-              <div class="form__transport-item">
-                <label for="weight">Грузоподъемность</label>
-                <input id="weight" type="text" name="name" placeholder="Не выбрана" required><svg width="8" height="5">
-                  <use xlink:href="./img/sprite.svg#arrow"></use>
-                </svg><span>Выбрать для покупки</span>
+            <h2 class="title-small">Транспорт</h2>
+            <div class="form__list form__transport-list">
+              <div class="form__item form__transport-item">
+                <p>Грузоподъемность</p>
+                <select class="select-css">
+                  <option>Не выбрана</option>
+                  <option>Вариант 1</option>
+                  <option>Вариант 2</option>
+                  <option>Вариант 3</option>
+                  <option>Вариант 4</option>
+                  <option>Вариант 5</option>
+                </select>
               </div>
-              <div class="form__transport-item">
-                <label for="method">Куда</label>
-                <input id="method" type="text" name="name" placeholder="Задняя" required>
+              <div class="form__item form__transport-item">
+                <!--label for="method"></label>
+                <input id="method" type="text" name="name" placeholder="" required><svg width="8" height="5">
+                  <use xlink:href="./img/sprite.svg#arrow"></use>
+                </svg><span class="visually-hidden">Выбрать для покупки</span>-->
+
+                <p>Способ погрузки</p>
+                <select class="select-css">
+                  <option>Задняя</option>
+                  <option>Верхняя</option>
+                  <option>Боковая</option>
+                </select>
               </div>
             </div>
           </section>
           <section class="form__cargo">
-            <h2>Транспорт</h2>
-            <div class="from__cargo-list">
-              <div class="form__cargo-item">
-                <label for="type">Тип груза</label>
-                <input id="type" type="text" name="name" placeholder="Не выбран" required><svg width="8" height="5">
+            <h2 class="title-small">Груз</h2>
+            <div class="form__list form__cargo-list">
+              <div class="form__item form__cargo-item">
+                <!--<label for="type"></label>
+                <input id="type" type="text" name="name" placeholder="" required><svg width="8" height="5">
                   <use xlink:href="./img/sprite.svg#arrow"></use>
-                </svg><span>Выбрать для покупки</span>
+               </svg><span class="visually-hidden">Выбрать для покупки</span>-->
+                <p>Тип груза</p>
+                <select class="select-css">
+                  <option>Не выбран</option>
+                </select>
               </div>
-              <div class="form__cargo-item">
-                <label for="class">Класс опасности</label>
-                <input id="class" type="text" name="name" placeholder=">1" required>
+              <div class="form__item form__cargo-item">
+                <!-- <label for="class"></label>
+                <input id="class" type="text" name="name" placeholder="" required><span class="visually-hidden">Выбрать для покупки</span>-->
+                <p>Класс опасности</p>
+                <select class="select-css">
+                  <option>Класс 5-</option>
+                </select>
               </div>
-              <div class="form__cargo-item">
-                <label for="valuation">Объявленная ценность, ₽</label>
-                <input id="valuation" type="text" name="name" placeholder="Задняя" required>
+              <div class="form__item form__cargo-item">
+                <!-- <label for="valuation">Объявленная ценность, ₽</label>
+                <input id="valuation" type="text" name="name" placeholder=">1" required>-->
+                <p>Объявленная ценность, ₽</p>
+                <select class="select-css">
+                  <option>≥ 1</option>
+                </select>
               </div>
 
-              <div class="form__cargo-item">
+              <div class="form__item form__cargo-item">
                 <div class="checkbox">
-                  <input id="formAgreement" checked type="checkbox" name="agreement" class="visually-hidden req">
-                  <label for="formAgreement"><span>Требуется температурный режим</span></label>
+                  <input id="formagreement" checked type="checkbox" name="agreement" class="visually-hidden req">
+                  <label for="formagreement" class="checkbox__arrow"><span>Требуется температурный режим</span></label>
                 </div>
-                <div class="from__temperature-list">
-                  <div class="form__temperature-item">
-                    <label for="TemperatureStart">От, ℃</label>
-                    <input id="TemperatureStart" type="text" name="name" placeholder="-20">
+                <div class="form__temperature-list visually-hidden">
+                  <div class="form__item form__temperature-item">
+                    <label for="temperaturestart">От, ℃</label>
+                    <input id="temperaturestart" type="text" name="name" placeholder="-20">
                   </div>
-                  <div class="form__temperature-item">
-                    <label for="TemperatureEnd">До, ℃</label>
-                    <input id="TemperatureEnd" type="text" name="name" placeholder="+23">
+                  <div class="form__item form__temperature-item">
+                    <label for="temperatureend">До, ℃</label>
+                    <input id="temperatureend" type="text" name="name" placeholder="+23">
                   </div>
                 </div>
               </div>
             </div>
           </section>
-
           <section class="form__time">
-            <h2>Время<svg width="8" height="5">
-                <use xlink:href="./img/sprite.svg#arrow"></use>
-              </svg></h2>
-            <div class="from__time-list">
-              <div class="form__time-wrap">
+            <div class="form__time-box dropdown">
+              <button onclick="myFunction()" class="title-small dropbtn">Время<svg class="form__time-arrow" width="8" height="5">
+                  <use xlink:href="./img/sprite.svg#btn-arrow"></use>
+                </svg></button>
+              <div class="form__time-wrap ">
                 <p class="form__time-arrival">Когда прибыть на точку</p>
                 <p class="form__time-plan">700 км в день</p>
               </div>
-              <div class="form__time-item">
-                <label for="adress">Выбрать адрес</label>
-                <input id="adress" type="text" name="name" placeholder="Адрес не указан" required><span>Не
-                  выбрано</span>
+              <div id="myDropdown" class="form__time-list dropdown-content">
+                <a href="#"><span class="form__time-uninsert">Адрес не указан</span><span class="form__time-insert">Не
+                    выбрано</span></a>
+                <a href="#" class="disable"><span class="form__time-uninsert">Адрес не указан</span><span
+                    class="form__time-insert">Не выбрано</span></a>
               </div>
-              <!-- <div class="form__time-item">
-              <label for="adress"><span>Выбрать адрес</span></label>
-              <input id="adress" type="text" name="name" placeholder="Адрес не указан" required><span>Не выбрано</span>
-            </div>-->
-              <div class="form__time-item">
-                <h2>Комментарии к заказу</h2>
+              <div class="form__item form__time-item">
+                <label class="form__item-letter" for="adress-letter">Комментарии к заказу</label>
                 <textarea class="form__time-text" id="adress-letter" name="text"
                   placeholder="Укажите особенности въезда на территорию склада или подъезда к адресу"></textarea>
               </div>
             </div>
           </section>
-        <!--</form>-->
+        </form>
       </div>
     </div>
   </main>

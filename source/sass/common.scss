@@ -15,7 +15,7 @@ body {
   font-size: $font-size;
   font-weight: 400;
   background-color: $color;
-  color: $color-light
+  color: $color-light;
 }
 
 .list-reset {
@@ -63,4 +63,85 @@ body {
 
 a {
   text-decoration: none;
+  color: $color-light;
+}
+
+.title-small {
+  font-size: 24px;
+  line-height: 30px;
+  position: relative;
+  left: 33px;
+}
+
+.title-small::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: $color-red;
+  border-radius: 50%;
+  color: $color-light;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  vertical-align: middle;
+  left: -32px;
+}
+
+.form__route .title-small::before {
+  content: "1";
+}
+
+.form__transport .title-small::before {
+  content: "2";
+}
+
+.form__cargo .title-small::before {
+  content: "3";
+}
+
+.form__cargo .title-small::before {
+  content: "3";
+}
+
+.form__cargo .title-small::before {
+  content: "3";
+}
+
+.form__time .title-small::before {
+  content: "4";
+}
+
+.form__list {
+  display: flex;
+  width: 46%;
+  flex-wrap: wrap;
+}
+
+input {
+  font-size: 15px;
+  line-height: 18px;
+  min-height: 45px;
+}
+
+h2 {
+  margin: 0;
+  max-width: 200px;
+}
+
+.form__item p {
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+select {
+  font-size: 15px;
+  line-height: 18px;
+  padding: 5px 10px 0 10px;
+  min-height: 45px;
+}
+
+select:active {
+  background-color: $color-red;
+  color: $color-light;
 }

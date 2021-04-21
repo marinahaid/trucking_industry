@@ -2,4 +2,9 @@
     <symbol id="arrow" width="8" height="5" viewBox="0 0 8 5" fill="none">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M1 0L4 3L7 0L8 1L4 5L0 1L1 0Z" fill="black"/>
     </symbol>
+    <symbol id="btn-arrow" width="8" height="5" viewBox="0 0 8 5" fill="none">
+        <g>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M1 5L4 2L7 5L8 4L4 0L0 4L1 5Z" fill="white"/>
+        </g>
+    </symbol>
 </svg>

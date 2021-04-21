@@ -1,6 +1,29 @@
-/*.form {
+.form {
+width: 100%;
+margin: 0 auto;
+padding-bottom: 129px;
 }
 
+.form__container {
+  margin: 0 auto;
+  padding-top: 42px;
+}
+
+.form__container h1 {
+  font-size: 56px;
+  line-height: 68px;
+  font-weight: 700;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.form__item {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/*
 .form__container {
   display: flex;
   justify-content: space-between;
