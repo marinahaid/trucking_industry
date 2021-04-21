@@ -1,7 +1,15 @@
-/* Dropdown Button */
 .dropbtn {
-
+ width: 103px;
   cursor: pointer;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $color-light;
+  background-color: $color;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Dropdown button on hover & focus */
@@ -13,7 +21,6 @@
 .dropdown {
   position: relative;
   display: inline-block;
-
 }
 
 /* Dropdown Content (Hidden by Default) */

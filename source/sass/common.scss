@@ -131,14 +131,15 @@ h2 {
 
 .form__item p {
   margin: 0;
-  padding-bottom: 5px;
+  padding-bottom: 6px;
+  font-size: 13px;
 }
 
 select {
   font-size: 15px;
   line-height: 18px;
   padding: 5px 10px 0 10px;
-  min-height: 45px;
+  min-height: 46px;
 }
 
 select:active {

@@ -3,21 +3,32 @@
   margin: 0 auto;
 }
 
-.form__route h2{
-margin: 0;
-padding-bottom: 17px;
+.form__route h2 {
+  margin: 0;
+  padding-bottom: 17px;
 }
 
-.form__route label{
-padding-bottom: 5px;
+.form__route label {
+  padding-bottom: 5px;
 }
 
-.form__route-item input{
-
-//min-height: 44px;
+.form__route-item input {
 }
 
 .form__route-item {
   width: 100%;
-padding-bottom: 18px;
+  padding-bottom: 16px;
+  position: relative;
+}
+
+.form__item-button {
+  width: 16px;
+  height: 2px;
+  background-color: #cfcfcf;
+  box-shadow: 0 6px 0 0 #cfcfcf;
+  position: absolute;
+  right: 0;
+  top: 41px;
+  margin-right: 11px;
+  border: none;
 }
