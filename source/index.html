@@ -34,7 +34,7 @@
           <section class="form__transport">
             <h2 class="title-small">Транспорт</h2>
             <div class="form__list form__transport-list">
-              <div class="form__item form__transport-item">
+              <!--
                 <p>Грузоподъемность</p>
                 <select class="select-css">
                   <option>Не выбрана</option>
@@ -44,19 +44,36 @@
                   <option>Вариант 4</option>
                   <option>Вариант 5</option>
                 </select>
-              </div>
-<div class="form__item form__transport-item">
-                <!--label for="method"></label>
-                <input id="method" type="text" name="name" placeholder="" required><svg width="8" height="5">
-                  <use xlink:href="./img/sprite.svg#arrow"></use>
-                </svg><span class="visually-hidden">Выбрать для покупки</span>-->
+              </div>-->
 
+              <div class="form__item form__transport-item">
+                <p>Грузоподъемность</p>
+                <div class="form__transport-dropdown dropdown1">
+                  <button onclick="myFunction1()" class="form__transport-dropbtn dropbtn1"><span>Не выбрана</span><svg
+                      class="form__transport-arrow" width="8" height="5">
+                      <use xlink:href="./img/sprite.svg#arrow"></use>
+                    </svg></button>
+                  <div id="myDropdown1" class="form__transport-content content1">
+                    <a href="#">Вариант 1</a>
+                    <a href="#">Вариант 2</a>
+                    <a href="#">Вариант 3</a>
+                    <a href="#">Вариант 4</a>
+                    <a href="#">Вариант 5</a>
+                  </div>
+                </div>
+              </div>
+              <div class="form__item form__transport-item">
                 <p>Способ погрузки</p>
-                <select class="select-css">
-                  <option>Задняя</option>
-                  <option>Верхняя</option>
-                  <option>Боковая</option>
-                </select>
+                <div class="form__transport-dropdown dropdown2">
+                  <button onclick="myFunction2()" class="form__transport-dropbtn dropbtn2"><span>Задняя</span><svg
+                      class="form__transport-arrow" width="8" height="5">
+                      <use xlink:href="./img/sprite.svg#arrow"></use>
+                    </svg></button>
+                  <div id="myDropdown2" class="form__transport-content content2">
+                    <a href="#">Верхняя</a>
+                    <a href="#">Боковая</a>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
@@ -64,26 +81,18 @@
             <h2 class="title-small">Груз</h2>
             <div class="form__list form__cargo-list">
               <div class="form__item form__cargo-item">
-                <!--<label for="type"></label>
-                <input id="type" type="text" name="name" placeholder="" required><svg width="8" height="5">
-                  <use xlink:href="./img/sprite.svg#arrow"></use>
-               </svg><span class="visually-hidden">Выбрать для покупки</span>-->
                 <p>Тип груза</p>
                 <select class="select-css">
                   <option>Не выбран</option>
                 </select>
               </div>
               <div class="form__item form__cargo-item">
-                <!-- <label for="class"></label>
-                <input id="class" type="text" name="name" placeholder="" required><span class="visually-hidden">Выбрать для покупки</span>-->
                 <p>Класс опасности</p>
                 <select class="select-css">
                   <option>Класс 5-</option>
                 </select>
               </div>
               <div class="form__item form__cargo-item">
-                <!-- <label for="valuation">Объявленная ценность, ₽</label>
-                <input id="valuation" type="text" name="name" placeholder=">1" required>-->
                 <p>Объявленная ценность, ₽</p>
                 <select class="select-css">
                   <option>≥ 1</option>

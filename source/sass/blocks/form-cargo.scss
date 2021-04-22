@@ -61,7 +61,7 @@
   display: inline-block;
   vertical-align: top;
   position: absolute;
-  z-index: 1;
+  z-index: 0;
   top: -5px;
   left: 0;
   background-color: $color-red;
@@ -80,7 +80,7 @@
   background-position: center;
   display: inline-block;
   vertical-align: top;
-  z-index: 5;
+  z-index: 0;
   position: absolute;
   left: 9px;
   top: -3px;
