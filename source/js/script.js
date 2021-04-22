@@ -54,3 +54,23 @@ if (!event.target.matches('.dropbtn2')) {
   }
 }
 }
+
+
+
+function myFunction3() {
+  document.getElementById("myDropdown3").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+if (!event.target.matches('.dropbtn3')) {
+
+  var dropdowns = document.getElementsByClassName("content3");
+  var i;
+  for (i = 0; i < dropdowns.length; i++) {
+    var openDropdown = dropdowns[i];
+    if (openDropdown.classList.contains('show')) {
+      openDropdown.classList.remove('show');
+    }
+  }
+}
+}

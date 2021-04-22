@@ -34,24 +34,14 @@
           <section class="form__transport">
             <h2 class="title-small">Транспорт</h2>
             <div class="form__list form__transport-list">
-              <!--
-                <p>Грузоподъемность</p>
-                <select class="select-css">
-                  <option>Не выбрана</option>
-                  <option>Вариант 1</option>
-                  <option>Вариант 2</option>
-                  <option>Вариант 3</option>
-                  <option>Вариант 4</option>
-                  <option>Вариант 5</option>
-                </select>
-              </div>-->
-
               <div class="form__item form__transport-item">
                 <p>Грузоподъемность</p>
                 <div class="form__transport-dropdown dropdown1">
                   <button onclick="myFunction1()" class="form__transport-dropbtn dropbtn1"><span>Не выбрана</span><svg
                       class="form__transport-arrow" width="8" height="5">
                       <use xlink:href="./img/sprite.svg#arrow"></use>
+                    </svg><svg class="form__transport-arrow--active" width="8" height="5">
+                      <use xlink:href="./img/sprite.svg#arrow-active"></use>
                     </svg></button>
                   <div id="myDropdown1" class="form__transport-content content1">
                     <a href="#">Вариант 1</a>
@@ -100,18 +90,36 @@
               </div>
 
               <div class="form__item form__cargo-item">
-                <div class="checkbox">
-                  <input id="formagreement" checked type="checkbox" name="agreement" class="visually-hidden req">
-                  <label for="formagreement" class="checkbox__arrow"><span>Требуется температурный режим</span></label>
-                </div>
-                <div class="form__temperature-list">
-                  <div class="form__item form__temperature-item">
-                    <label for="temperaturestart">От, ℃</label>
-                    <input id="temperaturestart" type="text" name="name" placeholder="-20">
-                  </div>
-                  <div class="form__item form__temperature-item">
-                    <label for="temperatureend">До, ℃</label>
-                    <input id="temperatureend" type="text" name="name" placeholder="+23">
+                <div class="checkbox dropdown3">
+                  <!-- <input id="formagreement" checked type="checkbox" name="agreement" class="visually-hidden req">
+                  <label onclick="myFunction3()" for="formagreement" class="dropbtn3 "><span></span></label>-->
+                  <button onclick="myFunction3()" class="checkbox__arrow dropbtn3"><span>Требуется температурный режим
+                      </span></button>
+                  <div id="myDropdown3" class="form__temperature-list content3">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="form__item form__temperature-item">
+                      <label for="temperaturestart">От, ℃</label>
+                      <input id="temperaturestart" type="text" name="name" placeholder="-20">
+                    </div>
+                    <div class="form__item form__temperature-item">
+                      <label for="temperatureend">До, ℃</label>
+                      <input id="temperatureend" type="text" name="name" placeholder="+23">
+                    </div>
                   </div>
                 </div>
               </div>

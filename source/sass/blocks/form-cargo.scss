@@ -46,9 +46,36 @@
   font-size: 13px;
   line-height: 15px;
   border: none;
+  background-color: inherit;
+  color: $color-light;
+
+ 
 }
 
 .checkbox__arrow::before {
+  content: "";
+  width: 27px;
+  height: 27px;
+  border-radius: 5%;
+  //border: 1px solid #cecece;
+  border: 1px solid $color-light;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  vertical-align: top;
+  position: absolute;
+  z-index: 0;
+  top: -5px;
+  left: 0;
+  background-color: $color;
+}
+
+
+
+.checkbox__arrow:hover::before,
+.checkbox__arrow:focus::before, 
+.checkbox__arrow:active::before{
   content: "";
   width: 27px;
   height: 27px;
@@ -67,7 +94,9 @@
   background-color: $color-red;
 }
 
-.checkbox__arrow::after {
+.checkbox__arrow:hover::after,
+.checkbox__arrow:focus::after,
+.checkbox__arrow:active::after {
   content: "";
   width: 7px;
   height: 15px;
@@ -93,6 +122,7 @@
 
 .form__temperature-item {
   padding-right: 8px;
+  width: 50%;
 }
 
 .form__temperature-item:last-child {

@@ -21,13 +21,13 @@
 .form__item {
   display: flex;
   flex-direction: column;
-}
+ }
 
 @media (max-width: $mobile-width) {
   .form__container h1 {
     font-size: 32px;
     line-height: 40px;
     margin: 0 auto;
-    text-align: center;
+    padding-top: 41px;
   }
 }

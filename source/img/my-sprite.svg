@@ -7,4 +7,9 @@
             <path fill-rule="evenodd" clip-rule="evenodd" d="M1 5L4 2L7 5L8 4L4 0L0 4L1 5Z" fill="white"/>
         </g>
     </symbol>
+    <symbol id="arrow-active" width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M7 5L4 2L1 5L-8.74228e-08 4L4 3.49691e-07L8 4L7 5Z" fill="black"/>
+      </g>
+    </symbol>
 </svg>
