@@ -141,11 +141,12 @@ select {
   line-height: 18px;
   padding: 4px 10px 0 10px;
   min-height: 46px;
-}
 
-select:active {
-  background-color: $color-red;
-  color: $color-light;
+  &:focus {
+    transition: all 0.2s ease-out;
+    background-color: $color-red;
+    color: #ffffff;
+  }
 }
 
 @media (max-width: $mobile-width) {
@@ -163,6 +164,6 @@ select:active {
   }
 
   select {
-  min-height: 45px;
+    min-height: 45px;
   }
 }
