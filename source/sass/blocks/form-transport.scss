@@ -36,27 +36,45 @@
 
 .form__transport-dropbtn:hover,
 .dropbtn:focus {
-  //position: relative;
+
   color: #cfcfcf;
-  width: 343px;
+position: relative;
   border: none;
+  z-index: 4;
 }
 
-.form__transport-dropbtn.form__transport-arrow:active {
+.form__transport-dropbtn .form__transport-arrow:hover ,
+.dropbtn .form__transport-arrow:hover:focus {
+  display: none;
+}
+
+.form__transport-dropbtn .form__transport-arrow--active:hover ,
+.dropbtn .form__transport-arrow--active:focus {
+  display: block;
+}
+
+.form__transport-dropbtn .form__transport-arrow ,
+.dropbtn .form__transport-arrow:focus {
+  display: block;
+}
+
+.form__transport-dropbtn .form__transport-arrow--active ,
+.dropbtn .form__transport-arrow--active:focus {
   display: none;
 }
 
 .form__transport-dropdown {
   position: relative;
   display: inline-block;
+  z-index: 4;
 }
 
 .form__transport-content {
   display: none;
   position: absolute;
   background-color: $color-light;
-  width: 343px;
-  z-index: 1;
+  width: 100%;
+  z-index: 5;
 }
 
 .form__transport-content a {
@@ -73,6 +91,10 @@
 
 .show {
   display: block;
+}
+
+.show .form__transport-arrow {
+  display: none;
 }
 
 @media (max-width: $mobile-width) {
