@@ -56,23 +56,22 @@
   line-height: 16px;
 }
 
-
 .disable .form__time-insert {
   opacity: 0.3;
 }
 
-.form__time-uninsert::before{
-content: "";
-position: absolute;
-width: 16px;
-height: 16px;
-background-color: #343539;
-border-radius: 50%;
-border: 4px solid $color-red;
-left: -22px;
+.form__time-uninsert::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #343539;
+  border-radius: 50%;
+  border: 4px solid $color-red;
+  left: -22px;
 }
 
- .disable .form__time-uninsert::before{
+.disable .form__time-uninsert::before {
   content: "";
   position: absolute;
   width: 16px;
@@ -94,24 +93,23 @@ left: -22px;
   color: #cfcfcf;
   font-family: "Helvetica", "Arial", sans-serif;
   min-height: 80px;
+  resize: vertical;
 }
 
 .form__time-list {
   width: 100%;
 }
 
-
-
 @media (max-width: $mobile-width) {
-.form__time {
-  padding-top: 22px;
-}
+  .form__time {
+    padding-top: 22px;
+  }
 
-.form__time-box {
-width: 100%;
-}
+  .form__time-box {
+    width: 100%;
+  }
 
-.form__time-text {
-padding: 14px 10px 0 14px;
-}
+  .form__time-text {
+    padding: 14px 10px 0 14px;
+  }
 }

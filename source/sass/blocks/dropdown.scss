@@ -1,5 +1,5 @@
 .dropbtn {
- width: 103px;
+  width: 103px;
   cursor: pointer;
   font-size: 24px;
   line-height: 30px;
@@ -12,8 +12,9 @@
   align-items: center;
 }
 
-.dropbtn:hover, .dropbtn:focus {
- opacity: 0.3;
+.dropbtn:hover,
+.dropbtn:focus {
+  opacity: 0.3;
 }
 
 .dropdown {
@@ -23,25 +24,16 @@
 
 .dropdown-content {
   display: none;
- overflow:auto;
-}
-
-.dropdown-content a {
-
-}
-
-.dropdown-content a:hover {
-
+  overflow: auto;
 }
 
 .show {
-  display:block;
+  display: block;
 }
-
 
 @media (max-width: $mobile-width) {
   .dropbtn {
-  font-size: 20px;
-  line-height: 24px;
-}
+    font-size: 20px;
+    line-height: 24px;
+  }
 }

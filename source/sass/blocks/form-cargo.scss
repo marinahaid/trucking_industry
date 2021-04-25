@@ -17,7 +17,7 @@
 .form__cargo-item {
   width: 50%;
   padding-right: 8px;
-  padding-bottom: 18px;
+  padding-bottom: 15px;
 }
 
 .form__cargo-item:first-child,
@@ -53,23 +53,18 @@
   border: none;
 }
 
-.form__cargo-dropbtn .form__cargo-arrow:hover,
-.dropbtn .form__cargo-arrow:hover:focus {
-  display: none;
+.form__cargo-dropbtn .form__cargo-arrow,
+.form__cargo-dropbtn .form__cargo-arrow {
+  display: block;
 }
 
 .form__cargo-dropbtn .form__cargo-arrow--active:hover,
-.dropbtn .form__cargo-arrow--active:focus {
+.form__cargo-dropbtn .form__cargo-arrow--active:focus {
   display: block;
 }
 
 .form__cargo-dropbtn .form__cargo-arrow,
-.dropbtn .form__cargo-arrow:focus {
-  display: block;
-}
-
-.form__cargo-dropbtn .form__cargo-arrow--active,
-.dropbtn .form__cargo-arrow--active:focus {
+.form__cargo-dropbtn .form__cargo-arrow {
   display: none;
 }
 
@@ -99,30 +94,30 @@
   color: $color-light;
 }
 
-.show {
-  display: block;
-}
-
 .show .form__cargo-arrow {
   display: none;
 }
 
-.checkbox {
-  padding-top: 4px;
-}
-
 .checkbox__arrow {
   display: flex;
-  padding-left: 38px;
-  position: relative;
+ position: relative;
   font-size: 13px;
   line-height: 15px;
   border: none;
   background-color: inherit;
   color: $color-light;
   padding-bottom: 4px;
+  align-items: center;
 }
 
+.form__cargo-item {
+  padding-bottom: 11px;
+}
+.checkbox__arrow::before {
+  background-color: $color;
+  border: 1px solid #fff;
+  margin-right: 11px;
+}
 .checkbox input:checked + label::after {
   content: "";
   width: 6px;
@@ -138,33 +133,22 @@
   z-index: 1;
   position: absolute;
   left: 11px;
-  top: 2px;
+  top: 5px;
 }
 
 .checkbox input:checked + .checkbox__arrow::before {
   background-color: $color-red;
+  border: none;
 }
 
-.checkbox__arrow::before {
-  content: "";
-  width: 27px;
-  height: 27px;
-  border-radius: 5%;
-  border: 1px solid $color-light;
-  margin: 0;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: inline-block;
-  vertical-align: top;
-  position: absolute;
-  z-index: 0;
-  top: -5px;
-  left: 0;
-  background-color: $color;
-}
+
+
+
+
+//
 
 .form__temperature-list {
-  padding-top: 17px;
+ padding-top: 17px;
   display: flex;
   width: 100%;
 }
@@ -172,6 +156,10 @@
 .form__temperature-item {
   padding-right: 8px;
   width: 50%;
+}
+
+.form__temperature-content {
+display: none;
 }
 
 .form__temperature-item:last-child {
@@ -211,7 +199,7 @@
     padding-right: 0;
   }
 
-.checkbox__arrow::before {
+  .checkbox__arrow::before {
     content: "";
     width: 25px;
     height: 25px;

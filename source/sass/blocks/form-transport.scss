@@ -34,40 +34,40 @@
   align-items: center;
 }
 
-.form__transport-dropbtn:hover,
-.dropbtn:focus {
 
+.form__transport-dropbtn:hover,
+.form__transport-dropbtn:focus {
   color: #cfcfcf;
-position: relative;
+  position: relative;
   border: none;
   z-index: 4;
 }
 
-.form__transport-dropbtn .form__transport-arrow:hover ,
-.dropbtn .form__transport-arrow:hover:focus {
-  display: none;
-}
-
-.form__transport-dropbtn .form__transport-arrow--active:hover ,
-.dropbtn .form__transport-arrow--active:focus {
+/*.form__transport-dropbtn .form__transport-arrow,
+.form__transport-dropbtn .form__transport-arrow {
   display: block;
 }
 
-.form__transport-dropbtn .form__transport-arrow ,
-.dropbtn .form__transport-arrow:focus {
-  display: block;
-}
-
-.form__transport-dropbtn .form__transport-arrow--active ,
-.dropbtn .form__transport-arrow--active:focus {
+.form__transport-dropbtn .form__transport-arrow:hover,
+.form__transport-dropbtn .form__transport-arrow:focus {
   display: none;
 }
+
+.form__transport-dropbtn .form__transport-arrow--active,
+.form__transport-dropbtn .form__transport-arrow--active {
+  display: none;
+}
+
+.form__transport-dropbtn .form__transport-arrow--active:hover,
+.form__transport-dropbtn .form__transport-arrow--active:focus {
+  display: block;
+}*/
 
 .form__transport-dropdown {
   position: relative;
   display: inline-block;
   z-index: 4;
-}
+ }
 
 .form__transport-content {
   display: none;
@@ -75,6 +75,10 @@ position: relative;
   background-color: $color-light;
   width: 100%;
   z-index: 5;
+}
+
+.content2 {
+  right: 0;
 }
 
 .form__transport-content a {
@@ -91,10 +95,6 @@ position: relative;
 
 .show {
   display: block;
-}
-
-.show .form__transport-arrow {
-  display: none;
 }
 
 @media (max-width: $mobile-width) {
